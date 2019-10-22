@@ -1,0 +1,9 @@
+<section>
+  <h3>{{ name }}</h3>
+  <button (click)="toggle()">toggle panel</button>
+  <div *ngIf="panelState==='open'">
+    <ng-container *ngTemplateOutlet="panel?.templateRef"></ng-container>
+  </div>
+</section>
+
+
